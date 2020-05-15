@@ -1,0 +1,72 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+section{
+	background:url(IMG_20200210_131921_213_d_850.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 650px;
+	position: relative;
+	overflow: hidden;
+}
+.snow1{
+	background:url(Snow-PNG-Photo.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 650px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation:animateOne 10s infinite linear;
+}
+.snow2{
+	background:url(Snow-PNG-Photo.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 650px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation:animateTwo 10s infinite linear;
+	background-size: 300px;
+}
+.snow3{
+	background:url(Snow-PNG-Photo.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 650px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation:animateThree 20s infinite linear;
+	background-size: 800px;
+}
+@keyframes animateOne{
+	0%{
+		background-position: 0 0;
+	}
+	100%{
+		background-position: 100px 650px;
+	}
+
+}
+@keyframes animateTwo{
+	0%{
+		background-position: 0 -100px;
+	}
+	100%{
+		background-position: 0px 650px;
+	}
+
+}
+@keyframes animateThree{
+	0%{
+		background-position: 0 100px;
+	}
+	100%{
+		background-position: 300px 650px;
+	}
+
+}

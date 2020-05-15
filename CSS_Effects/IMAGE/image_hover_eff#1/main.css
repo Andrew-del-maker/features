@@ -1,0 +1,43 @@
+body{
+	background-color: #003444;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	margin: 100px auto;
+	width: 1000px;
+}
+.imageBox{
+	position:relative;
+	overflow: hidden;
+}
+.imageBox img {
+	width: 100%;
+
+}
+.textBox {
+	background-color: #aac;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	color: rgba(450,80,25,.9);
+	transition: .5s;
+
+}
+.textBox h1{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #fff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+.imageBox:hover .textBox{
+	left:0%;
+}
+.imageBox:hover img{
+	transform: scale(1.2);
+}

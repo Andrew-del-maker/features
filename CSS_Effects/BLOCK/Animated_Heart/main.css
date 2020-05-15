@@ -1,0 +1,35 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #3e0000;
+}
+.heart{
+	width: 180px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: darkred;
+	transition: 1s ease;
+}
+.heart:after{
+	content:'';
+	position: absolute;
+	width: 180px;
+	height: 100px;
+	border: 1px solid #000;
+	background-color: red;
+	transition: 2s ease;
+	transform-origin: bottom right;
+}
+.heart:hover{
+	transform: rotate(45deg) translate(-50%);
+	border-bottom-left-radius: 60px;
+	border-top-left-radius: 60px;
+}
+.heart:hover:after{
+	transform: rotate(450deg) translateY(100%);
+	border-bottom-left-radius: 60px;
+	border-top-left-radius: 60px;
+}

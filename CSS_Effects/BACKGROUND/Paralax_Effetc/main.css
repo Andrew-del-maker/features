@@ -1,0 +1,11 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+section{
+	width: 100%;
+	height: 600px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 3em;
+	padding: 10px;
+}
